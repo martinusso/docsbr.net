@@ -83,6 +83,7 @@
     <Compile Include="IEValidatorTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CPFTests.cs" />
+    <Compile Include="IETests.cs" />
     <Compile Include="Utils\DigitoVerificadorTests.cs" />
     <Compile Include="Utils\OnlyNumbersTests.cs" />
     <Compile Include="Utils\UFTests.cs" />

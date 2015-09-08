@@ -24,6 +24,12 @@ namespace DocsBr
             this.enumUF = (UF)uf;
         }
 
+        public IE(string inscEstadual, string uf)
+        {
+            this.ie = inscEstadual;
+            Enum.TryParse(uf, out this.enumUF);
+        }
+
         public override string ToString()
         {
             return this.ie;
