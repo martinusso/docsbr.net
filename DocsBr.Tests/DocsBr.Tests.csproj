@@ -86,7 +86,7 @@
     <Compile Include="IETests.cs" />
     <Compile Include="Utils\DigitoVerificadorTests.cs" />
     <Compile Include="Utils\OnlyNumbersTests.cs" />
-    <Compile Include="Utils\UFTests.cs" />
+    <Compile Include="UFTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DocsBr\DocsBr.csproj">

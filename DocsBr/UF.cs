@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace DocsBr.Utils
+namespace DocsBr
 {
     public enum UF
     {
@@ -68,17 +68,18 @@ namespace DocsBr.Utils
 
         public static UF uf;
 
-        public static int GetCodigo(this UF uf)
+
+        public static int Codigo(this UF uf)
         {
             return (int)uf;
         }
 
-        public static string GetDescricao(this UF uf)
+        public static string Nome(this UF uf)
         {
             return descricaoUF[(int)uf];
         }
 
-        public static string GetSigla(this UF uf)
+        public static string Sigla(this UF uf)
         {
             return uf.ToString();
         }

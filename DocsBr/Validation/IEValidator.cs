@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using DocsBr.Utils;
-using DocsBr.Validation.IE;
+﻿using DocsBr.Validation.IE;
 
 namespace DocsBr.Validation
 {
