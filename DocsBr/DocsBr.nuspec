@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>docsbr</id>
+    <version>1.0.0</version>
+    <authors>martinusso</authors>
+    <owners>martinusso</owners>
+    <licenseUrl>https://raw.githubusercontent.com/martinusso/docsbr.net/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/martinusso/docsbr.net</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Validação e formatação de documentos brasileiros</description>
+    <releaseNotes>API simples para validação e formatação de CPF, CNPJ e IE.</releaseNotes>
+    <copyright>Copyright 2015</copyright>
+    <tags>documentos brasil cnpj cpf ie inscrição estadual</tags>
+  </metadata>
+</package>
