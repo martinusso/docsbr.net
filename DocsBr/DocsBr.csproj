@@ -42,11 +42,42 @@
   <ItemGroup>
     <Compile Include="CNPJ.cs" />
     <Compile Include="CPF.cs" />
+    <Compile Include="IE.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utils\DigitoVerificador.cs" />
     <Compile Include="Utils\OnlyNumbers.cs" />
+    <Compile Include="Utils\UF.cs" />
     <Compile Include="Validation\CNPJValidator.cs" />
     <Compile Include="Validation\CPFValidator.cs" />
+    <Compile Include="Validation\IE\IEAcreValidator.cs" />
+    <Compile Include="Validation\IE\IEAlagoasValidator.cs" />
+    <Compile Include="Validation\IE\IEAmapaValidator.cs" />
+    <Compile Include="Validation\IE\IEAmazonasValidator.cs" />
+    <Compile Include="Validation\IE\IEBahiaValidator.cs" />
+    <Compile Include="Validation\IE\IECearaValidator.cs" />
+    <Compile Include="Validation\IE\IEDistritoFederalValidator.cs" />
+    <Compile Include="Validation\IE\IEEspiritoSantoValidator.cs" />
+    <Compile Include="Validation\IE\IEGoiasValidator.cs" />
+    <Compile Include="Validation\IE\IEMaranhaoValidator.cs" />
+    <Compile Include="Validation\IE\IEMatoGrossoDoSulValidator.cs" />
+    <Compile Include="Validation\IE\IEMatoGrossoValidator.cs" />
+    <Compile Include="Validation\IE\IEMinasGeraisValidator.cs" />
+    <Compile Include="Validation\IE\IEParaibaValidator.cs" />
+    <Compile Include="Validation\IE\IEParanaValidator.cs" />
+    <Compile Include="Validation\IE\IEParaValidator.cs" />
+    <Compile Include="Validation\IE\IEPernambucoValidator.cs" />
+    <Compile Include="Validation\IE\IEPiauiValidator.cs" />
+    <Compile Include="Validation\IE\IERioDeJaneiroValidator.cs" />
+    <Compile Include="Validation\IE\IERioGrandeDoNorteValidator.cs" />
+    <Compile Include="Validation\IE\IERioGrandeDoSulValidator.cs" />
+    <Compile Include="Validation\IE\IERondoniaValidator.cs" />
+    <Compile Include="Validation\IE\IERoraimaValidator.cs" />
+    <Compile Include="Validation\IE\IESantaCatarinaValidator.cs" />
+    <Compile Include="Validation\IE\IESaoPauloValidator.cs" />
+    <Compile Include="Validation\IE\IESergipeValidator.cs" />
+    <Compile Include="Validation\IE\IETocantinsValidator.cs" />
+    <Compile Include="Validation\IEValidator.cs" />
+    <Compile Include="Validation\IE\IIEValidator.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

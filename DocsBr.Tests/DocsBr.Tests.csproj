@@ -53,8 +53,39 @@
   </Choose>
   <ItemGroup>
     <Compile Include="CNPJTests.cs" />
+    <Compile Include="IEAcreValidatorTests.cs" />
+    <Compile Include="IEAlagoasValidatorTest.cs" />
+    <Compile Include="IEAmapaValidatorTests.cs" />
+    <Compile Include="IEAmazonasValidatorTests.cs" />
+    <Compile Include="IEBahiaValidatorTest.cs" />
+    <Compile Include="IECearaValidatorTests.cs" />
+    <Compile Include="IEDistritoFederalValidatorTests.cs" />
+    <Compile Include="IEEspiritoSantoValidatorTests.cs" />
+    <Compile Include="IEGoiasValidatorTests.cs" />
+    <Compile Include="IEMaranhaoValidatorTests.cs" />
+    <Compile Include="IEMatoGrossoDoSulValidatorTests.cs" />
+    <Compile Include="IEMatoGrossoValidatorTests.cs" />
+    <Compile Include="IEMinasGeraisValidatorTests.cs" />
+    <Compile Include="IEParaibaValidatorTests.cs" />
+    <Compile Include="IEParanaValidatorTests.cs" />
+    <Compile Include="IEParaValidatorTests.cs" />
+    <Compile Include="IEPernambucoValidatorTests.cs" />
+    <Compile Include="IEPiauiValidatorTests.cs" />
+    <Compile Include="IERioDeJaneiroValidatorTests.cs" />
+    <Compile Include="IERioGrandeDoNorteValidatorTests.cs" />
+    <Compile Include="IERioGrandeDoSulValidatorTests.cs" />
+    <Compile Include="IERondoniaValidatorTests.cs" />
+    <Compile Include="IERoraimaValidatorTests.cs" />
+    <Compile Include="IESantaCatarinaValidatorTests.cs" />
+    <Compile Include="IESaoPauloValidatorTests.cs" />
+    <Compile Include="IESergipeValidatorTests.cs" />
+    <Compile Include="IETocantinsValidatorTests.cs" />
+    <Compile Include="IEValidatorTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CPFTests.cs" />
+    <Compile Include="Utils\DigitoVerificadorTests.cs" />
+    <Compile Include="Utils\OnlyNumbersTests.cs" />
+    <Compile Include="Utils\UFTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DocsBr\DocsBr.csproj">
