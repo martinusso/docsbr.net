@@ -1,5 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using DocsBr.Utils;
 using DocsBr.Validation.IE;
 
 namespace DocsBr.Tests

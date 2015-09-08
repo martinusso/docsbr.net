@@ -68,7 +68,6 @@ namespace DocsBr
 
         public static UF uf;
 
-
         public static int Codigo(this UF uf)
         {
             return (int)uf;
