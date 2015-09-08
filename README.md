@@ -23,7 +23,7 @@ CPF cpf = "99999999990";
 cnpj.ComMascara(); // 999.999.999-90
 ```
 
-Inscrição Estadual (IE) NÃO possui o método `ComMascara`!
+> Inscrição Estadual (IE) NÃO possui o método `ComMascara`!
 
 ## Validando
 
