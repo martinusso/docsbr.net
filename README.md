@@ -8,21 +8,15 @@ Validação e formatação de documentos do Brasi
 
 ## Formatando
 
-### CNPJ
-
 ```CSharp
 CNPJ cnpj = "99999999000191";
 cnpj.ComMascara(); // 99.999.999/0001-91
-```
 
-#### Sem máscara
-```CSharp
+// Sem máscara
 CNPJ cnpj = "99.999.999/0001-91";
 cnpj.SemMascara(); // 99999999000191
 cnpj.ToString(); // 99999999000191
 ```
-
-### CPF
 
 ```CSharp
 CPF cpf = "99999999990";
@@ -31,7 +25,7 @@ cnpj.ComMascara(); // 999.999.999-90
 
 ## Validando
 
-> Em breve implementação método `Assert`: https://github.com/martinusso/docsbr.net/issues/1
+> Será implementado também o método `Assert`: https://github.com/martinusso/docsbr.net/issues/1
 
 ```CSharp
 CNPJ cnpj = "99999999000191";
@@ -47,3 +41,7 @@ cnpj.IsValid(); // True
 IE ie = new IE("395.333.85-7", "ES");
 ie.IsValid(); // True
 ```
+
+## Contribuindo
+
+Crie uma issue. Envie um pull request (com testes).
