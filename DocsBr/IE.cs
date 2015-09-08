@@ -11,11 +11,11 @@ namespace DocsBr
 
         public int CodigoUF
         {
-            get { return enumUF.GetCodigo(); }
+            get { return enumUF.Codigo(); }
         }
         public string SiglaUF
         {
-            get { return enumUF.GetSigla(); }
+            get { return enumUF.Sigla(); }
         }
 
         public IE(string inscEstadual, int uf)
