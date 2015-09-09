@@ -27,7 +27,7 @@ cnpj.ComMascara(); // 999.999.999-90
 
 ## Validando
 
-> Será implementado também o método `Assert`: https://github.com/martinusso/docsbr.net/issues/1
+> Será implementado também o método `AssertValid`: https://github.com/martinusso/docsbr.net/issues/1
 
 ```CSharp
 CNPJ cnpj = "99999999000191";
