@@ -42,6 +42,9 @@ cnpj.IsValid(); // True
 ```CSharp
 IE ie = new IE("395.333.85-7", "ES");
 ie.IsValid(); // True
+
+IE ie = new IE("395.333.85-7", 32); // Com o código da UF
+ie.IsValid(); // True
 ```
 
 ## Contribuindo
