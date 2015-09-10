@@ -6,6 +6,15 @@ Validação e formatação de documentos do Brasi
 [![Nuget count](http://img.shields.io/nuget/v/docsbr.svg)](https://www.nuget.org/packages/docsbr/)
 [![Nuget downloads](http://img.shields.io/nuget/dt/docsbr.svg)](https://www.nuget.org/packages/docsbr/)
 
+
+## Instalação
+
+### NuGet Package
+
+```
+Install-Package docsbr
+```
+
 ## Formatando
 
 ```CSharp
