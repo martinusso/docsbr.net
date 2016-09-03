@@ -91,5 +91,12 @@ namespace DocsBr.Tests
             CNPJ cnpj2 = "99.999.999/0001-00";
             Assert.IsFalse(cnpj1.Equals(cnpj2));
         }
+
+        [TestMethod]
+        public void TestShouldReturnEmptyCNPJWhenPassNull()
+        {
+            CNPJ cnpj = null;
+            Assert.AreEqual<string>("", cnpj);
+        }
     }
 }

@@ -21,6 +21,9 @@ namespace DocsBr
 
         public static implicit operator CNPJ(string cnpj)
         {
+            if (cnpj == null)
+                cnpj = "";
+
             return new CNPJ(cnpj);
         }
 
