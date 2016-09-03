@@ -21,6 +21,9 @@ namespace DocsBr
 
         public static implicit operator CPF(string cpf)
         {
+            if (cpf == null)
+                cpf = "";
+
             return new CPF(cpf);
         }
 

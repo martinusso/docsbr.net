@@ -77,17 +77,24 @@ namespace DocsBr.Tests
         [TestMethod]
         public void TestShouldReturnEqualsWhenComparedFormattedAndUnformattedCPF()
         {
-            CNPJ cpfWithMask = formattedCPF;
-            CNPJ cpfWithoutMask = unformattedCPF;
+            CPF cpfWithMask = formattedCPF;
+            CPF cpfWithoutMask = unformattedCPF;
             Assert.IsTrue(cpfWithMask.Equals(cpfWithoutMask));
         }
 
         [TestMethod]
         public void TestShouldReturnNotEqualsWhenComparedDifferentCPF()
         {
-            CNPJ cpf1 = unformattedCPF;
-            CNPJ cpf2 = invalidCPF;
+            CPF cpf1 = unformattedCPF;
+            CPF cpf2 = invalidCPF;
             Assert.IsFalse(cpf1.Equals(cpf2));
+        }
+
+        [TestMethod]
+        public void TestShouldReturnEmptyCPFWhenPassNull()
+        {
+            CPF cpf = null;
+            Assert.AreEqual<string>("", cpf);
         }
     }
 }
