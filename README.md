@@ -66,6 +66,14 @@ IE ie = new IE("395.333.85-7", 32); // Com o código da UF
 ie.IsValid(); // True
 ```
 
+## CEP
+
+### Formatando
+
+```CSharp
+CEP.Formatar("12345678"); // 12.345-678
+```
+
 ## Observações
 
 > Será implementado também o método `AssertValid`: https://github.com/martinusso/docsbr.net/issues/1
