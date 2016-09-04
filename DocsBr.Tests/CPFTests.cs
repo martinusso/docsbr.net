@@ -95,6 +95,23 @@ namespace DocsBr.Tests
         {
             CPF cpf = null;
             Assert.AreEqual<string>("", cpf);
+            Assert.AreEqual<string>("", cpf.ComMascara());
+        }
+
+        [TestMethod]
+        public void TestShouldReturnEmptyCPFWhenPassLessThan11Numbers()
+        {
+            CPF cpf = "12345";
+            Assert.AreEqual<string>("12345", cpf);
+            Assert.AreEqual<string>("000.000.123-45", cpf.ComMascara());
+        }
+
+        [TestMethod]
+        public void TestShouldReturnEmptyCPFWhenPassLessThan11Chars()
+        {
+            CPF cpf = "12E45";
+            Assert.AreEqual<string>("1245", cpf);
+            Assert.AreEqual<string>("000.000.012-45", cpf.ComMascara());
         }
     }
 }

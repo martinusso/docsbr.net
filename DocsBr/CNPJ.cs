@@ -34,6 +34,9 @@ namespace DocsBr
 
         public string ComMascara()
         {
+            if (this.Numero == "")
+                return "";
+
             string pattern = @"{0:00\.000\.000\/0000\-00}";
             return String.Format(pattern, Convert.ToUInt64(this.Numero));
         }

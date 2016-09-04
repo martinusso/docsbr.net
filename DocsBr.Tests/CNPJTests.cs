@@ -97,6 +97,23 @@ namespace DocsBr.Tests
         {
             CNPJ cnpj = null;
             Assert.AreEqual<string>("", cnpj);
+            Assert.AreEqual<string>("", cnpj.ComMascara());
+        }
+
+        [TestMethod]
+        public void TestShouldReturnEmptyCNPJWhenPassLessThan14Numbers()
+        {
+            CNPJ cnpj = "12345";
+            Assert.AreEqual<string>("12345", cnpj);
+            Assert.AreEqual<string>("00.000.000/0123-45", cnpj.ComMascara());
+        }
+
+        [TestMethod]
+        public void TestShouldReturnEmptyCNPJWhenPassLessThan14Chars()
+        {
+            CNPJ cnpj = "12E45";
+            Assert.AreEqual<string>("1245", cnpj);
+            Assert.AreEqual<string>("00.000.000/0012-45", cnpj.ComMascara());
         }
     }
 }
