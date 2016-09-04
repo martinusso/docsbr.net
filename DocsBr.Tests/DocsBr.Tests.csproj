@@ -53,6 +53,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="CEPTests.cs" />
+    <Compile Include="ChaveAcessoTests.cs" />
     <Compile Include="CNPJTests.cs" />
     <Compile Include="IEAcreValidatorTests.cs" />
     <Compile Include="IEAlagoasValidatorTest.cs" />
