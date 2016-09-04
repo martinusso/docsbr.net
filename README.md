@@ -68,10 +68,32 @@ ie.IsValid(); // True
 
 ## CEP
 
+> CEP NÃO possui validação!
+
 ### Formatando
 
 ```CSharp
 CEP.Formatar("12345678"); // 12.345-678
+```
+
+## UF
+
+### Nome
+
+```CSharp
+UF.ES.Nome(); // Espírito Santo
+```
+
+### Sigla
+
+```CSharp
+UF.SP.Sigla(); // "SP"
+```
+
+### Código
+
+```CSharp
+UF.DF.Codigo(); // 53
 ```
 
 ## Observações
