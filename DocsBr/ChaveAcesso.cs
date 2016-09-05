@@ -24,7 +24,7 @@ namespace DocsBr
             get { return _uf; }
             set
             {
-                if (!ListaUF().Contains(value))
+                if (!Utils.UF.Codigos.Contains(value))
                     throw new ArgumentException(UFInvalida);
 
                 _uf = value;
@@ -241,11 +241,6 @@ namespace DocsBr
             Numero = numero;
             FormaEmissao = formaEmissao;
             CodigoNumerico = codigoNumerico;
-        }
-
-        private int[] ListaUF()
-        {
-            return new int[] { 11, 12, 13, 14, 15, 16, 17, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 35, 41, 42, 43, 50, 51, 52, 53 };
         }
 
         public override string ToString()
