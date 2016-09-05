@@ -53,6 +53,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="CEPTests.cs" />
+    <Compile Include="ChaveAcessoTests.cs" />
     <Compile Include="CNPJTests.cs" />
     <Compile Include="IEAcreValidatorTests.cs" />
     <Compile Include="IEAlagoasValidatorTest.cs" />
@@ -88,6 +89,7 @@
     <Compile Include="Utils\DigitoVerificadorTests.cs" />
     <Compile Include="Utils\OnlyNumbersTests.cs" />
     <Compile Include="UFTests.cs" />
+    <Compile Include="Utils\UFTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DocsBr\DocsBr.csproj">

@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CEP.cs" />
+    <Compile Include="ChaveAcesso.cs" />
     <Compile Include="CNPJ.cs" />
     <Compile Include="CPF.cs" />
     <Compile Include="IE.cs" />
@@ -48,6 +49,7 @@
     <Compile Include="Utils\DigitoVerificador.cs" />
     <Compile Include="Utils\OnlyNumbers.cs" />
     <Compile Include="UF.cs" />
+    <Compile Include="Utils\UF.cs" />
     <Compile Include="Validation\CNPJValidator.cs" />
     <Compile Include="Validation\CPFValidator.cs" />
     <Compile Include="Validation\IE\IEAcreValidator.cs" />
