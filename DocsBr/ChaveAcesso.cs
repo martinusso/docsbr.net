@@ -37,13 +37,9 @@ namespace DocsBr
             get { return _ano; }
             set
             {
-                if (value.Length == 1)
+                if (value.Length == 1 || value.Length == 2)
                 {
                     _ano = value.PadLeft(2, '0');
-                }
-                else if (value.Length == 2)
-                {
-                    _ano = value;
                 }
                 else if (value.Length == 4)
                 {
@@ -198,13 +194,7 @@ namespace DocsBr
         {
             if (chaveAcesso == null)
                 throw new ArgumentNullException(ChaveAcessoInvalida);
-            /*
-            string[] validDocs =
-            {
-                "52 06 04 33009911002506550120000007800267301615",
-                "01 23 45 67890123456789012345678901234567890123456789"
-            };
-            */
+
             UF = int.Parse(chaveAcesso.Substring(0, 2));
             Ano = chaveAcesso.Substring(2, 2);
             Mes = chaveAcesso.Substring(4, 2);
