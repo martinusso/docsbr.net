@@ -46,6 +46,7 @@
     <Compile Include="CPF.cs" />
     <Compile Include="IE.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SUFRAMA.cs" />
     <Compile Include="Utils\DigitoVerificador.cs" />
     <Compile Include="Utils\OnlyNumbers.cs" />
     <Compile Include="UF.cs" />
