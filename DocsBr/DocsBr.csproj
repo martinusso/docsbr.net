@@ -45,6 +45,7 @@
     <Compile Include="CNPJ.cs" />
     <Compile Include="CPF.cs" />
     <Compile Include="IE.cs" />
+    <Compile Include="PIS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SUFRAMA.cs" />
     <Compile Include="Utils\DigitoVerificador.cs" />
@@ -82,6 +83,7 @@
     <Compile Include="Validation\IE\IETocantinsValidator.cs" />
     <Compile Include="Validation\IEValidator.cs" />
     <Compile Include="Validation\IE\IIEValidator.cs" />
+    <Compile Include="Validation\PISValidator.cs" />
     <Compile Include="Validation\SUFRAMAValidator.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
