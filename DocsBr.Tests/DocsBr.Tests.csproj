@@ -87,6 +87,7 @@
     <Compile Include="CPFTests.cs" />
     <Compile Include="IETests.cs" />
     <Compile Include="PISTests.cs" />
+    <Compile Include="SUFRAMATests.cs" />
     <Compile Include="Utils\DigitoVerificadorTests.cs" />
     <Compile Include="Utils\OnlyNumbersTests.cs" />
     <Compile Include="UFTests.cs" />
