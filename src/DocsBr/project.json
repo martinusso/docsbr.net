@@ -1,0 +1,28 @@
+﻿{
+  "version": "2.0.0-*",
+  "title": "DocsBr Standard",
+  "language": "pt-BR",
+  "description": "Validação e formatação de documentos do Brasil.",
+  "packOptions": {
+    "projectUrl": "https://github.com/martinusso/docsbr.net",
+    "licenseUrl": "https://raw.githubusercontent.com/martinusso/docsbr.net/master/LICENSE",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/martinusso/docsbr.net.git"
+    },
+    "summary": "Validação e formatação de documentos do Brasil.",
+    "tags": [
+      "cpf", "cnpj", "standard", "library", "Brasil", "Brazil", "inscrição estadual"
+    ],
+    "releaseNotes": "Portada biblioteca para Standard Library 1.6."
+  },
+  "dependencies": {
+    "NETStandard.Library": "1.6.0"
+  },
+
+  "frameworks": {
+    "netstandard1.6": {
+      "imports": "dnxcore50"
+    }
+  }
+}
