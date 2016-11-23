@@ -40,7 +40,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CEP.cs" />
     <Compile Include="ChaveAcesso.cs" />
     <Compile Include="CNPJ.cs" />
     <Compile Include="CPF.cs" />
