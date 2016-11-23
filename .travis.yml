@@ -1,2 +1,3 @@
 language: csharp
 solution: DocsBr.sln
+sudo: required
