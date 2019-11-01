@@ -29,7 +29,7 @@ namespace DocsBr.Validation.IE
 
         private bool IsSizeValid()
         {
-            return this.inscEstadual.Length == 11;
+            return this.inscEstadual.Length == 11 | this.inscEstadual.Length ==9;
         }
 
         private bool HasValid3rdAnd4thDigits()
@@ -45,9 +45,19 @@ namespace DocsBr.Validation.IE
 
         private bool HasValidCheckDigits()
         {
-            string number = String.Concat(this.inscEstadual.Substring(0, 2), this.inscEstadual.Substring(4, 6));
+            string number;
+            if (this.inscEstadual.Length == 9)
+            {
+                number = this.inscEstadual.Substring(0, 8);
+            }
+            else
+            {
+                number = String.Concat(this.inscEstadual.Substring(0, 2), this.inscEstadual.Substring(4, 6));
+            }
+
             DigitoVerificador digitoVerificador = 
                 new DigitoVerificador(number).ComMultiplicadoresDeAte(2, 9).Substituindo("0", 10, 11);
+
             return digitoVerificador.CalculaDigito() == this.inscEstadual.Substring(this.inscEstadual.Length - 1, 1);
         }
     }
