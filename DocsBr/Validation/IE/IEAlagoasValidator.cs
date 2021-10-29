@@ -29,9 +29,16 @@ namespace DocsBr.Validation.IE
              *  7- Micro-Empresa Ambulante, 
              *  8-Micro-Empresa)
              */
+             
+            /* 
+            Desabilitado pois existe IEs válidas que não se enquadram nessa regra.
+            
             string[] validTypes = {"0", "3", "5", "7", "8"};
             string number = this.inscEstadual.Substring(2, 1);
             return validTypes.Contains(number);
+            */
+            
+            return true;
         }
 
         private bool HasValidCheckDigits()
