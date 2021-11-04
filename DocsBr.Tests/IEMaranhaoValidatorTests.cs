@@ -6,8 +6,12 @@ namespace DocsBr.Tests
     [TestClass]
     public class IEMaranhaoValidatorTests : IEValidatorTests
     {
-        private static string[] validValues = { "12.074072-9", "12000038-5" };
-
+        //private static string[] validValues = {
+        //    "12.074072-9", "12000038-5", "12.233602-0", "12404921-4",
+        //    "12138560-4", "12479458-0", "12046931-6", "12708673-0",
+        //    "12138560-4", "12996677-0", "12957307-8", "12565693-9"
+        //};
+        private static string[] validValues = { "12.233602-0" };
         private static string[] invalidValues = { "12.074072-5", "12000038-0" };
 
         public IEMaranhaoValidatorTests()

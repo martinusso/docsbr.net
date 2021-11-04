@@ -42,8 +42,10 @@ namespace DocsBr.Validation.IE
             string number = this.inscEstadual.Substring(0, this.inscEstadual.Length - 1);
 
             DigitoVerificador digitoVerificador = new DigitoVerificador(number)
+                                                        .SemComplementarDoModulo()
                                                         .ComMultiplicadoresDeAte(2, 9)
-                                                        .Substituindo("0", 0, 1);
+                                                        .Substituindo("0", 0, 1, 10);
+
             return digitoVerificador.CalculaDigito() == this.inscEstadual.Substring(this.inscEstadual.Length - 1, 1);
         }
     }

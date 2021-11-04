@@ -16,6 +16,7 @@ namespace DocsBr.Validation.IE
         public bool IsValid()
         {
             if (!IsCompanyTypeValid()) return false;
+            if (!IsFirstDigitsValid()) return false;
             return HasValidCheckDigits();
         }
 
@@ -39,6 +40,11 @@ namespace DocsBr.Validation.IE
             */
             
             return true;
+        }
+
+        private bool IsFirstDigitsValid()
+        {
+            return this.inscEstadual.Substring(0, 2) == "24";
         }
 
         private bool HasValidCheckDigits()
