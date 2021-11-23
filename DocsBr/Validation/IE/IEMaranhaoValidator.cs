@@ -8,7 +8,7 @@ namespace DocsBr.Validation.IE
     /// Validação da IE de Maranhão
     /// </summary>
     /// <remarks>
-    /// ROTEIRO DE CRÍTICA DA INSCRIÇÃO ESTADUAL: 
+    /// ROTEIRO DE CRÍTICA DA INSCRIÇÃO ESTADUAL:
     ///   http://www.sintegra.gov.br/Cad_Estados/cad_MA.html
     /// </remarks>
     public class IEMaranhaoValidator : IIEValidator
@@ -42,9 +42,8 @@ namespace DocsBr.Validation.IE
             string number = this.inscEstadual.Substring(0, this.inscEstadual.Length - 1);
 
             DigitoVerificador digitoVerificador = new DigitoVerificador(number)
-                                                        .SemComplementarDoModulo()
                                                         .ComMultiplicadoresDeAte(2, 9)
-                                                        .Substituindo("0", 0, 1, 10);
+                                                        .Substituindo("0", 11, 10);
 
             return digitoVerificador.CalculaDigito() == this.inscEstadual.Substring(this.inscEstadual.Length - 1, 1);
         }
