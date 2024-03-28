@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
 namespace DocsBr.Tests
@@ -49,7 +50,7 @@ namespace DocsBr.Tests
             Assert.AreEqual<string>("0", ca.FormaEmissao);
             Assert.AreEqual<string>("26730161", ca.CodigoNumerico);
             Assert.AreEqual<string>("5", ca.DigitoVerificador);
-    }
+        }
 
         [TestMethod]
         public void TestShouldValidatesChavesAcesso()
