@@ -35,7 +35,7 @@ namespace DocsBr.Validation.IE
         private bool BeginsCorrectly()
         {
             string beginIE = this.inscEstadual.Substring(0, 2);
-            string[] correctBegins = {"10", "11", "15"};
+            string[] correctBegins = {"10", "11", "15", "20", "29"};
             return correctBegins.Contains(beginIE);
         }
 
