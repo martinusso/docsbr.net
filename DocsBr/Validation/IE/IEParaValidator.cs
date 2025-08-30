@@ -34,7 +34,8 @@ namespace DocsBr.Validation.IE
         
         private bool BeginsCorrectly()
         {
-            return this.inscEstadual.Substring(0, 2) == "15";
+            var start = int.Parse(this.inscEstadual.Substring(0, 2));
+            return start == 15 || (start >= 75 && start <= 79);
         }
 
         private bool HasValidCheckDigits()
