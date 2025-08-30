@@ -6,12 +6,15 @@ name: Build & Test
 on:
   push:
     branches: [ "master" ]
+    paths:
+      - 'DocsBr/DocsBr.csproj'
   pull_request:
     branches: [ "master" ]
+    paths:
+      - 'DocsBr/DocsBr.csproj'
 
 jobs:
   build:
-
     runs-on: windows-latest
 
     steps:
@@ -28,9 +31,9 @@ jobs:
       
     - name: Restore dependencies
       run: dotnet restore
-      
-    - name: Build
-      run: dotnet build --no-restore
-      
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
+
+    - name: Run tests
+      run: dotnet test --no-restore --verbosity normal
+
+    - name: Build and pack
+      run: dotnet build DocsBr/DocsBr.csproj --no-restore
