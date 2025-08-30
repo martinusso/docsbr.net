@@ -23,7 +23,9 @@ jobs:
         dotnet-version: 8.0.x
         
     - name: Install .NET Framework 4.5.2 Developer Pack
-      run: choco install dotnet4.5.2-devpack --version 4.5.2.20140902 -y
+      run: |
+          Invoke-WebRequest -Uri 'https://download.visualstudio.microsoft.com/download/pr/97f48e91-6458-450a-93a8-48b0cdd950d9/54e7d1d287340f1a941f10738d8109d9/NDP452-KB2901951-x86-x64-DevPack.exe' -OutFile 'NDP452-KB2901951-x86-x64-DevPack.exe'
+          Start-Process -Wait -FilePath 'NDP452-KB2901951-x86-x64-DevPack.exe' -ArgumentList '/q'
       shell: pwsh
       
     - name: Restore dependencies
