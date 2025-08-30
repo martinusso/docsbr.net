@@ -20,6 +20,9 @@ jobs:
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 8.0.x
+    - name: Install .NET Framework 4.5.2 Developer Pack
+      run: choco install dotnet4.5.2-devpack --version 4.5.2.20140902 -y
+      shell: pwsh
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
