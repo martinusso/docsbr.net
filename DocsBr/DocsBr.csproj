@@ -3,11 +3,16 @@
   <PropertyGroup>
     <TargetFrameworks>net8.0;netstandard2.1;net452</TargetFrameworks>
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
-
     <OutputType>Library</OutputType>
     <RootNamespace>DocsBr</RootNamespace>
     <AssemblyName>DocsBr</AssemblyName>
     <FileAlignment>512</FileAlignment>
+    <PackageId>docsbr</PackageId>
+    <Version>1.3.1</Version>
+    <Authors>martinusso;Eduardo Favarin</Authors>
+    <Company>docsbr</Company>
+    <PackageDescription>Validação e formatação de documentos do Brasil</PackageDescription>
+    <RepositoryUrl>https://www.nuget.org/packages/docsbr/</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'net452'">
