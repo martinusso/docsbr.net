@@ -222,7 +222,7 @@ namespace DocsBr
             }
 
             Setup((int)ufAsEnum, ano, mes, cnpj, modelo, serie, numero, formaEmissao, codigoNumerico);
-            
+
         }
 
         public ChaveAcesso(int uf, int ano, int mes, string cnpj, string modelo, string serie, string numero, string formaEmissao, string codigoNumerico)

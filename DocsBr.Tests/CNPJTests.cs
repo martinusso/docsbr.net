@@ -1,6 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-
-namespace DocsBr.Tests
+﻿namespace DocsBr.Tests
 {
     [TestClass]
     public class CNPJTests
